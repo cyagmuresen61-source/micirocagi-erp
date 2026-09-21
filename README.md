@@ -1,26 +1,33 @@
-# Mıcır Ocağı ERP – Profesyonel Yönetim Sistemi
+# Mıcır Ocağı ERP
 
-Sade, kurumsal, modern ve masaüstü öncelikli ERP.
+Bu bir internet sitesi değil, kendi bilgisayarınızda çalıştırılan bir programdır. Aşağıdaki adımlarla açılır.
 
-## Teknoloji
-- Next.js 15 + TypeScript
-- Firebase Auth + Firestore + Storage
-- Tailwind CSS
-- Excel (xlsx)
-- Türkçe arayüz, TL, GG.AA.YYYY, KDV %20
+## 1) En kolay yol (Vercel)
 
-## Kurulum
+1. https://vercel.com adresine GitHub ile giriş yapın.
+2. Add New → Project → `micirocagi-erp` reposunu seçin → Deploy.
+3. Bitince Vercel size bir link verir, o link uygulamadır.
+
+Tek tık deneme:
+https://vercel.com/new/clone?repository-url=https://github.com/cyagmuresen61-source/micirocagi-erp
+
+Kod deposu:
+https://github.com/cyagmuresen61-source/micirocagi-erp
+
+## 2) Kendi bilgisayarınızda
+
+1. https://nodejs.org adresinden LTS sürümü nü kurun.
+2. Bu klasörü indirin (Code → Download ZIP) ve açın.
+3. Klasörün içinde terminal açıp yazın:
+
 ```bash
 npm install
 npm run dev
 ```
-http://localhost:3000
 
-## Firebase
-Authentication → Email/Password açın. İlk kullanıcıyı Console’dan ekleyin.
+4. Tarayıcıda açın: http://localhost:3000
 
-## Modüller
-Kantar Fişleri (tam), Cariler, Gelir-Gider, Kasa, Yakıt, Personel, Faturalar, İrsaliyeler, Sevk Fişleri, Sanayi Giderleri, Tesis Çalışma, Firma Bilgileri.
+## Giriş
 
-## Vercel
-Bu repo’yu Vercel’e Import Project ile bağlayın. Framework: Next.js.
+Firebase Console → Authentication → Users → kullanıcı ekleyin.
+E-posta/şifre ile giriş yapın. Şifremi unuttum çalışır.
